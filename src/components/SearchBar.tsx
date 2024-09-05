@@ -1,6 +1,13 @@
 import { useState } from 'react'
 
-function SearchBar(props){
+// props{
+//     handleSearch: handleSearch
+// }
+interface SearchBarProps {
+    handleSearch: (e: React.FormEvent<HTMLFormElement>, searchTerm: string) => void
+}
+
+function SearchBar (props: SearchBarProps){
     let [searchTerm, setSearchTerm] = useState('')
 
     return (

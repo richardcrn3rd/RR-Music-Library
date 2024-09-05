@@ -1,6 +1,18 @@
 import { useState } from 'react'
+// import { Interface } from 'readline'
 
-function GalleryItem(props){
+interface GalleryItemProps {
+    item: Song,
+    key: number
+}
+
+interface Song {
+    trackName: string
+    collectionName: string
+    primaryGenreName: string
+    releaseDate: string
+}
+function GalleryItem(props: GalleryItemProps){
     let [view, setView] = useState(false)
 
     const simpleView = () => {

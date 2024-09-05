@@ -24,7 +24,7 @@ function App() {
   }
   }, [searchTerm])
 
-  const handleSearch = (e, term) => {
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>, term: string) => {
     e.preventDefault()
     setSearchTerm(term)
   }
