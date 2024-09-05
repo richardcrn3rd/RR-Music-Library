@@ -11,6 +11,7 @@ interface Song {
     collectionName: string
     primaryGenreName: string
     releaseDate: string
+    artworkUrl100: string
 }
 function GalleryItem(props: GalleryItemProps){
     let [view, setView] = useState(false)
@@ -60,3 +61,4 @@ function GalleryItem(props: GalleryItemProps){
 } 
 
 export default GalleryItem
+export type {Song}

@@ -19,5 +19,4 @@ function Gallery(props:GalleryProps){
     )
 }
 
-export type {Song}
 export default Gallery
